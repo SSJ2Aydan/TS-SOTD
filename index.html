@@ -1,0 +1,52 @@
+<html>
+<head>
+	<link rel="shortcut icon" type="image/jpg" href="images/favicon.jpg">
+	<title>TS Song of the Day</title>
+	<style>
+		span {transform: rotate(0deg) scaleX(1);}
+        @font-face { 
+            font-family: "SazanamiGothicRegular";
+            src: url('fonts/default.ttf');
+        }
+        body {
+            font-family: SazanamiGothicRegular;
+        }
+        .button {
+            background-color: white;
+            color: black;
+            padding: 16px 32px;
+            transition-duration: 0.4s;
+            cursor: pointer;
+            border: 2px solid #555555;
+        }
+        .button:hover {
+            background-color: #555555;
+            color: white;
+        }
+	</style>
+</head>
+<script src="TaylorSongs.js"></script>
+<body style="background-position: center; height: 100%; background-repeat: no-repeat; background-size: cover;"  background="images/background.webp" onload="loadingTaylor()">
+
+<div style="width:20%;height:100%;float:left;left:0%;top:0%;position:absolute;">
+    <img src="images/img_left.webp" alt="I love Taylor so much" style="width:100%;height:100%;object-fit:cover">
+</div>
+<div style="width:56%;height:100%;float:left;left:22%;top:0%;position:absolute;">
+    <div style="background-color:rgba(0,0,0,0.6);width:100%;height:100%;">
+        <div id="text" style="margin:auto;text-align:center;top:20%;width:80%;position:relative;color:white;">
+            Press the button for your Taylor Swift song of the day!
+        </div>
+        <div id="song" style="margin:auto;text-align:center;top:45%;width:75%;position:relative;">
+            <button type=button class="button" onclick="chooseSong()"> Clean &lt;3</button>
+        </div>
+    </div>
+</div>
+<div style="width:20%;height:100%;float:right;left:80%;top:0%;position:absolute;">
+    <img src="images/img_right.webp" alt="I love Taylor so much" style="width:100%;height:100%;object-fit:cover">
+</div>
+
+
+
+
+</body>
+</html>
